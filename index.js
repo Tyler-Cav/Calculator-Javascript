@@ -6,19 +6,19 @@ calculatorContainer.addEventListener("click", (e) => {
   if (e.target.innerText === "/") {
     formulaTrackerArray.push(parseInt(input.innerText));
     formulaTrackerArray.push("/");
-    input.innerText = "";
+    input.innerText = "0";
   } else if (e.target.innerText === "*") {
     formulaTrackerArray.push(parseInt(input.innerText));
     formulaTrackerArray.push("*");
-    input.innerText = "";
+    input.innerText = "0";
   } else if (e.target.innerText === "+") {
     formulaTrackerArray.push(parseInt(input.innerText));
     formulaTrackerArray.push("+");
-    input.innerText = "";
+    input.innerText = "0";
   } else if (e.target.innerText === "-") {
     formulaTrackerArray.push(parseInt(input.innerText));
     formulaTrackerArray.push("-");
-    input.innerText = "";
+    input.innerText = "0";
   } else if (e.target.innerText === "=") {
     formulaTrackerArray.push(input.innerText);
     let joiningAllValues = formulaTrackerArray.join(" ");
@@ -34,7 +34,7 @@ calculatorContainer.addEventListener("click", (e) => {
       .slice(0, input.innerText.length - 1);
     input.innerText = goBackOne;
     if (input.innerText.length === 0) {
-      input.innerText = 0
+      input.innerText = 0;
     }
   } else {
     if (input.innerText[0] === "0") {
