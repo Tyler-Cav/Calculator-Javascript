@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+  }
+  
+  .input {
+    height: 10px;
+    background-color: black;
+    color: white;
+    text-align: end;
+    margin-right: 20px;
+  }
+  
+  #CalcValue-C {
+    grid-area: C;
+  }
+  
+  #CalcValue-0 {
+    grid-area: test;
+  }
+  
+  #CalcValue-\/ {
+    grid-area: divide;
+    background-color: rgb(211, 154, 8);
+    color: white;
+  }
+  
+  #CalcValue-\* {
+    grid-area: times;
+    background-color: rgb(211, 154, 8);
+    color: white;
+  }
+  
+  #CalcValue-\+ {
+    grid-area: plus;
+    background-color: rgb(211, 154, 8);
+    color: white;
+  }
+  
+  #CalcValue-\- {
+    grid-area: minus;
+    background-color: rgb(211, 154, 8);
+    color: white;
+  }
+  
+  #CalcValue-\= {
+    background-color: rgb(211, 154, 8);
+    color: white;
+  }
+  
+  .calculator {
+    display: grid;
+    background-color: black;
+    gap: 1px;
+    grid-template-areas:
+      "C C . divide"
+      ". . . times"
+      ". . . minus"
+      ". . . plus"
+      "test test test .";
+  }
+  
+  .calculator button {
+    border-radius: 0;
+    padding: 0px;
+    background-color: none;
+    border: none;
+    height: 20px;
+  }
+  .calculator button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
