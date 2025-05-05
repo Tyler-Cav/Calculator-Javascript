@@ -67,6 +67,34 @@ section {
   color: white;
 }
 
+#CalcValue-1 {
+  grid-area: one;
+}
+#CalcValue-2 {
+  grid-area: two;
+}
+#CalcValue-3 {
+  grid-area: three;
+}
+#CalcValue-4 {
+  grid-area: four;
+}
+#CalcValue-5 {
+  grid-area: five;
+}
+#CalcValue-6 {
+  grid-area: six;
+}
+#CalcValue-7 {
+  grid-area: seven;
+}
+#CalcValue-8 {
+  grid-area: eight;
+}
+#CalcValue-9 {
+  grid-area: nine;
+}
+
 .calculator {
   display: grid;
   width: 100%;
@@ -75,9 +103,9 @@ section {
   gap: 1px;
   grid-template-areas:
     "C C . divide"
-    ". . . times"
-    ". . . minus"
-    ". . . plus"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
     "test test test .";
 }
 
